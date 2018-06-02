@@ -1,4 +1,4 @@
-FROM centos:7.4.1708
+FROM centos:7.2.1511
 MAINTAINER Christian Kniep <christian@anib.org>
 ##### Base from https://github.com/NCAR/container-wrf/blob/master/3.7.1/ncar-wrf/Dockerfile
 # -> John Exby <exby@ucar.edu>
