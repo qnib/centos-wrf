@@ -1,2 +1,2 @@
-# centos-wrf
-WRF installed on CentOS
+# plain-wrf
+WRF weather FEM
