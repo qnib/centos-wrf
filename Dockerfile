@@ -6,7 +6,7 @@ MAINTAINER Christian Kniep <christian@anib.org>
 # -> John Exby <exby@ucar.edu>
 
 COPY CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo
-RUN sed -i'' -e "s/RELEASE_VER/${DOCKER_IMG_TAG}/" /etc/yum.repos.d/CentOS-Base.repo
+RUN sed -i'' -e "s/RELEASE_VER/${CENTOS_VER}/" /etc/yum.repos.d/CentOS-Base.repo
 #
 # This Dockerfile compiles WRF from source during "docker build" step
 ENV WRF_VERSION 3.7.1
