@@ -10,7 +10,7 @@ ENV WRF_VERSION 3.7.1
 RUN curl -SL https://ral.ucar.edu/sites/default/files/public/projects/ncar-docker-wrf/ucar-bsd-3-clause-license.pdf > /UCAR-BSD-3-Clause-License.pdf
 #
 RUN yum --assumeno update --setopt=protected_multilib=false || exit 0 \
- && yum -y erase systemd
+ && yum -y erase systemd \
  && yum -y install --setopt=protected_multilib=false \
   file gcc gcc-gfortran gcc-c++ glibc.i686 libgcc.i686 libpng-devel jasper jasper-devel hostname m4 make perl \
   tar tcsh time wget which zlib zlib-devel openssh-clients openssh-server net-tools epel-release \
