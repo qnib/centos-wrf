@@ -12,7 +12,7 @@ RUN sed -i'' -e "s/RELEASE_VER/${CENTOS_VER}/" /etc/yum.repos.d/CentOS-Base.repo
 ENV WRF_VERSION 3.7.1
 RUN curl -SL https://ral.ucar.edu/sites/default/files/public/projects/ncar-docker-wrf/ucar-bsd-3-clause-license.pdf > /UCAR-BSD-3-Clause-License.pdf
 #
-#RUN yum --assumeno update --skip-broken --setopt=protected_multilib=false || exit 0
+RUN yum -y update
 RUN yum -y erase systemd || exit 0 \
  && yum -y install --setopt=protected_multilib=false \
   file gcc gcc-gfortran gcc-c++ glibc.i686 libgcc.i686 libpng-devel jasper jasper-devel hostname m4 make perl \
