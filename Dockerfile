@@ -1,5 +1,4 @@
-# cern/cc7-base -> 7.5.1804
-FROM cern/cc7-base@sha256:c23ef947353ff5ae0f2c8372831580d11450bb35b6048f33932b5f011de103b7
+FROM centos:7.3.1611
 MAINTAINER Christian Kniep <christian@anib.org>
 ##### Base from https://github.com/NCAR/container-wrf/blob/master/3.7.1/ncar-wrf/Dockerfile
 # -> John Exby <exby@ucar.edu>
